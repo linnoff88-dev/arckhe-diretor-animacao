@@ -1,4 +1,4 @@
-﻿# diretor-animacao
+# diretor-animacao
 
 <div align="center">
   <img src="capa/logo.svg" alt="Arckhé AI" height="48" />
@@ -6,7 +6,7 @@
 </div>
 
 
-**O Diretor de AnimaÃ§Ã£o** â€” transforma **imagens prontas** (fotos reais e/ou ilustraÃ§Ãµes) + **narraÃ§Ã£o** (Ã¡udio ou texto) em um **filme MP4 profissional, sem IA generativa de vÃ­deo**. A skill analisa cada imagem com visÃ£o, segmenta a narraÃ§Ã£o em beats e decide por imagem a cÃ¢mera, duraÃ§Ã£o, transiÃ§Ã£o, look e parallax, seguindo gramÃ¡tica cinematogrÃ¡fica. O render Ã© determinÃ­stico, via motor [pixflow](../pixflow) v2.3+.
+**O Diretor de AnimaÃ§Ã£o** â€” transforma **imagens prontas** (fotos reais e/ou ilustraÃ§Ãµes) + **narraÃ§Ã£o** (Ã¡udio ou texto) em um **filme MP4 profissional, sem IA generativa de vÃ­deo**. A skill analisa cada imagem com visÃ£o, segmenta a narraÃ§Ã£o em beats e decide por imagem a cÃ¢mera, duraÃ§Ã£o, transiÃ§Ã£o, look e parallax, seguindo gramÃ¡tica cARCKHÉtogrÃ¡fica. O render Ã© determinÃ­stico, via motor [pixflow](../pixflow) v2.3+.
 
 ## Recursos
 
@@ -15,7 +15,7 @@
 - **DireÃ§Ã£o por beat de narraÃ§Ã£o**: 18 movimentos de cÃ¢mera (incl. crane, aerial, dolly zoom, whip pan) + `framing` from/to, com regras duras de alternÃ¢ncia, amplitude (â‰¤2 dramÃ¡ticos seguidos) e **fim suspenso** (Ãºltimo plano Ã© o mais calmo).
 - **TransiÃ§Ãµes por fronteira, nunca uniformes**: `cut` (padrÃ£o, ~70%) / `whip` / `whip_left` / `zoom_blur` / `dip_to_black` / `crossfade`.
 - **Multi-shot**: imagens ricas viram 2â€“4 shots, com a narraÃ§Ã£o podendo atravessar o corte.
-- **GramÃ¡tica cinematogrÃ¡fica** completa em `skill/diretor-animacao/references/gramatica-direcao.md` (tabela mestra movimento Ã— beat, curva de 3 atos).
+- **GramÃ¡tica cARCKHÉtogrÃ¡fica** completa em `skill/diretor-animacao/references/gramatica-direcao.md` (tabela mestra movimento Ã— beat, curva de 3 atos).
 - **`montar-trilha.mjs`** â€” monta a trilha de Ã¡udio a partir da decupagem compensando os overlaps de transiÃ§Ã£o (timing de fonte Ãºnica: a narraÃ§Ã£o governa as duraÃ§Ãµes).
 - **`DICAS-CORRECOES.md`** â€” 9 liÃ§Ãµes de render cross-projeto (anti-pisca, frames pretos, anti-fantasma etc.).
 - **`piloto-f0/`** â€” pilotos F0â€¦F1d, experimentos (fotos reais, sem depth) e demo F2, com specs `*.movie.yaml` e decupagens que validaram cada regra.
@@ -45,7 +45,7 @@ Checagem rÃ¡pida: `cd ~/projetos/pixflow/skill && node cli/pixflow-motion.mjs 
 
 ## Exemplo completo
 
-[`exemplos/pequeno-principe.md`](exemplos/pequeno-principe.md) â€” primeiro filme real da skill: 21 ilustraÃ§Ãµes + 22 WAVs de narraÃ§Ã£o â†’ filme de 2min11 com 26 shots, mÃºsica CC0 com ducking, vento, whooshes e shimmer sintetizado. Inclui a decupagem completa, o fluxo de mÃºsica/SFX via inemavox/Freesound, o pipeline comando a comando e as liÃ§Ãµes novas.
+[`exemplos/pequeno-principe.md`](exemplos/pequeno-principe.md) â€” primeiro filme real da skill: 21 ilustraÃ§Ãµes + 22 WAVs de narraÃ§Ã£o â†’ filme de 2min11 com 26 shots, mÃºsica CC0 com ducking, vento, whooshes e shimmer sintetizado. Inclui a decupagem completa, o fluxo de mÃºsica/SFX via ARCKHÉvox/Freesound, o pipeline comando a comando e as liÃ§Ãµes novas.
 
 ## Regras de ouro (validadas por A/B)
 

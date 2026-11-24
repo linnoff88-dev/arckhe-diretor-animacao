@@ -30,7 +30,7 @@ Total: **29.5s** (crossfade 0.8s encurta a soma).
 | c5 | contemplação | aviador sob estrelas | **push_in** 0.7 (lento, ease_out) + dip_to_black | clímax reflexivo → aproximação mínima, peso |
 
 **Regra de alternância respeitada:** out → orbit → in → pan → in (nunca dois iguais vizinhos).
-**Looks:** cinema-dramatico como base; sonho-etereo nos beats de encanto/ternura.
+**Looks:** cARCKHÉ-dramatico como base; sonho-etereo nos beats de encanto/ternura.
 
 ## O que o F0 deve responder (avaliar no resultado)
 1. O parallax 2.5D segura nas **ilustrações** (depth bom?) e na **foto**?

@@ -2,11 +2,11 @@
 > 2026-06-10 · sessão encerrada para troca de terminal/modelo. Próximo agente: leia isto + PLANO.md.
 
 ## Where it started
-Sessão com 4 frentes encadeadas: (1) limpeza do repo `skill-videoprodutor` e fusão de README; (2) criação do repo `inemaref` (base de conhecimento HQ/folder); (3) vídeo "O Pequeno Príncipe em 20 imagens" via skill videoprodutor; (4) **frente principal e ativa**: plano + construção da skill "Diretor de Animação" (imagens prontas + narração → filme sem IA generativa de vídeo), com motor pixflow evoluído por ciclos de feedback do usuário.
+Sessão com 4 frentes encadeadas: (1) limpeza do repo `skill-videoprodutor` e fusão de README; (2) criação do repo `ARCKHÉref` (base de conhecimento HQ/folder); (3) vídeo "O Pequeno Príncipe em 20 imagens" via skill videoprodutor; (4) **frente principal e ativa**: plano + construção da skill "Diretor de Animação" (imagens prontas + narração → filme sem IA generativa de vídeo), com motor pixflow evoluído por ciclos de feedback do usuário.
 
 ## Applied / shipped
-- [confirmed] `skill-videoprodutor`: README fundido + referências ao repo antigo removidas — pushed `inematds/skill-videoprodutor` (`fa78ef6`)
-- [confirmed] Repo `inematds/inemaref` criado (privado) — referência→folder→quadrinho→série→filme; usuário evoluiu lá por conta própria (skills folder/quadrinho/motioncomic construídas POR ELE em outra sessão)
+- [confirmed] `skill-videoprodutor`: README fundido + referências ao repo antigo removidas — pushed `linnoff88-dev/skill-videoprodutor` (`fa78ef6`)
+- [confirmed] Repo `linnoff88-dev/ARCKHÉref` criado (privado) — referência→folder→quadrinho→série→filme; usuário evoluiu lá por conta própria (skills folder/quadrinho/motioncomic construídas POR ELE em outra sessão)
 - [confirmed] Vídeo Pequeno Príncipe: `~/projetos/pequeno-principe/renders/pequeno-principe-{16x9,9x16}.mp4` (22 cenas, flux2-klein + Kokoro)
 - [confirmed] **pixflow motor v2.0→v2.3** — `~/projetos/pixflow` commits `f0820f3`, `ca05ddc`, `631a5c0`, `096162b`: translação real da moldura, 19 movimentos (incl. crane/aerial/dolly_zoom/whip_pan/`framing` from-to), respiração, amplitude, anti-fantasma (depth 5-tap + supressão por gradiente), fix frames-pretos (draw antes de continueRender), transições whip/whip_left/zoom_blur, crossfade sem fundo preto. **Não pushed**
 - [confirmed] Repo `~/projetos/diretor-animacao` (git local, `d369328`, `f2e961a`; **sem remote GitHub**): `PLANO.md` (viabilidade + adendos de cada decisão), `DICAS-CORRECOES.md` (9 lições), `referencias/` (Ring Spark Burst), `skill/diretor-animacao/` (SKILL.md + gramatica-direcao.md + montar-trilha.mjs)
@@ -28,7 +28,7 @@ Sessão com 4 frentes encadeadas: (1) limpeza do repo `skill-videoprodutor` e fu
 
 ## Running state
 - Background processes: none (renders concluídos)
-- Dev servers: inemaimg/flux2-klein em `localhost:8000` [unverified se ainda no ar]
+- Dev servers: ARCKHÉimg/flux2-klein em `localhost:8000` [unverified se ainda no ar]
 - Branches: pixflow e diretor-animacao em master, working tree limpo
 
 ## Verification

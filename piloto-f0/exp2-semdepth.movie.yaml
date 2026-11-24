@@ -13,7 +13,7 @@ output:
   filename: exp2-semdepth.mp4
 
 defaults:
-  look: cinema-dramatico
+  look: cARCKHÉ-dramatico
   effects: { parallax: 0 }
   transition_out:
     type: cut

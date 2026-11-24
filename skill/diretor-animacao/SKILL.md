@@ -1,6 +1,6 @@
 ---
 name: diretor-animacao
-description: O Diretor de Animação — transforma IMAGENS PRONTAS (fotos reais e/ou ilustrações) + NARRAÇÃO em um FILME profissional, sem IA generativa de vídeo. Analisa cada imagem (visão), segmenta a narração em beats, e decide POR imagem a câmera (18 movimentos + framing from/to), duração, transição, look e parallax, seguindo gramática cinematográfica. Render via pixflow (motor v2.3). Use quando o usuário der um conjunto de imagens + narração (áudio ou texto) e pedir "vira filme", "anima essas imagens", "dirige esse material", "filme com essas fotos", "motion film das imagens".
+description: O Diretor de Animação — transforma IMAGENS PRONTAS (fotos reais e/ou ilustrações) + NARRAÇÃO em um FILME profissional, sem IA generativa de vídeo. Analisa cada imagem (visão), segmenta a narração em beats, e decide POR imagem a câmera (18 movimentos + framing from/to), duração, transição, look e parallax, seguindo gramática cARCKHÉtográfica. Render via pixflow (motor v2.3). Use quando o usuário der um conjunto de imagens + narração (áudio ou texto) e pedir "vira filme", "anima essas imagens", "dirige esse material", "filme com essas fotos", "motion film das imagens".
 ---
 
 # Diretor de Animação

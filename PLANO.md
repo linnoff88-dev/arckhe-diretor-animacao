@@ -1,5 +1,5 @@
 # Plano de viabilidade — skill "Diretor de Animação"
-### imagens prontas (mistas) + narração → filme com cara de cinema, sem IA generativa de vídeo
+### imagens prontas (mistas) + narração → filme com cara de cARCKHÉ, sem IA generativa de vídeo
 
 > **Veredito: VIÁVEL.** O motor (~70%) já existe no ecossistema (pixflow). O que falta é
 > (a) o **diretor automático** que decide câmera/tempo/luz POR imagem a partir da narração, e
@@ -29,7 +29,7 @@ O teste de sucesso: 50 imagens parecem um filme dirigido, não um slideshow.
 |---|---|---|
 | **9 movimentos de câmera** | ✅ pronto | push_in, pull_out, ken_burns, pan (6 direções), dolly, orbit, float, **handheld** (tremor procedural!), static — todos com intensity/easing (`skill/src/camera.js`) |
 | **Parallax 2.5D** | ✅ pronto | Depth-Anything-V2 via transformers.js (local, sem torch), UV displacement GLSL (`shaders.js`) |
-| **6 looks cinematográficos** | ✅ pronto | cinema-dramatico, noir, retro-vhs, sonho-etereo, acao-epico, sci-fi — grain/vinheta/aberração/bloom/lift-gain/exposição/saturação (`looks.js`) |
+| **6 looks cARCKHÉtográficos** | ✅ pronto | cARCKHÉ-dramatico, noir, retro-vhs, sonho-etereo, acao-epico, sci-fi — grain/vinheta/aberração/bloom/lift-gain/exposição/saturação (`looks.js`) |
 | **3 transições** | ✅ pronto | cut, crossfade, dip_to_black |
 | **Spec declarativo** | ✅ pronto | YAML `pixflow.movie/v1`: por cena → image, duration, camera, look, effects, caption, transition |
 | **Trilha de áudio** | ✅ pronto | `audio.track` sincronizada (Remotion `<Audio/>`) |
@@ -52,7 +52,7 @@ O teste de sucesso: 50 imagens parecem um filme dirigido, não um slideshow.
   Exatamente o problema que esta skill resolve. → `fontefilm/docs/notas-melhorias.md`
 
 ### 2.3 Pipeline de narração — `videoprodutor` / caso Pequeno Príncipe
-- Narração local (Kokoro/inemavox) → durações reais (ffprobe) → `AUDIO[]` governa todo o timing.
+- Narração local (Kokoro/ARCKHÉvox) → durações reais (ffprobe) → `AUDIO[]` governa todo o timing.
   Modelo validado 2× (Hormozi, Pequeno Príncipe).
 
 ### 2.4 Apoio
@@ -133,9 +133,9 @@ effects{}, hold{}, transition_out{}` + global: `narration, music, arc`.
 | Fase | Entrega | Esforço estimado |
 |---|---|---|
 | **F0 — Piloto "dá pra sentir"** | 5 imagens mistas + 1 narração → filme usando SÓ o pixflow atual + timing de narração. Valida o pipeline e expõe o que falta na prática. | 1 sessão |
-| **F1 — Motor+** | os 7 upgrades do motor (b1–b7) no pixflow, um por vez, com clipe de teste de cada efeito. Prioridade: rack focus, eventos de luz, transições GLSL (são o que mais "vende" cinema). | 2–4 sessões |
+| **F1 — Motor+** | os 7 upgrades do motor (b1–b7) no pixflow, um por vez, com clipe de teste de cada efeito. Prioridade: rack focus, eventos de luz, transições GLSL (são o que mais "vende" cARCKHÉ). | 2–4 sessões |
 | **F2 — O Diretor** | a skill: narração+imagens → análise → decupagem automática → spec v2 → render. Inclui o "knowledge pack" destilado (gramática mdd + Ken Burns + tabela conteúdo→movimento) como referência da skill. | 2–3 sessões |
-| **F3 — Polimento de cinema** | curva dramática global (intensidade cresce ao clímax), beat-sync com música, color grade por emoção/ato, modo revisão (preview por cena, regenerar 1 cena). | contínuo |
+| **F3 — Polimento de cARCKHÉ** | curva dramática global (intensidade cresce ao clímax), beat-sync com música, color grade por emoção/ato, modo revisão (preview por cena, regenerar 1 cena). | contínuo |
 
 **Marco de validação:** ao fim da F2, rodar o teste real — as suas 50 imagens + narração → filme
 de uma vez, e comparar com o Pequeno Príncipe (que vira o "antes").
@@ -159,7 +159,7 @@ de uma vez, e comparar com o Pequeno Príncipe (que vira o "antes").
 
 1. **Nome e casa da skill** — sugestões: `diretor-animacao` / `cinedirector` / dentro do pixflow?
    (recomendo repo próprio consumindo pixflow como motor, padrão videoprodutor)
-2. **Narração**: a skill aceita áudio pronto E texto (gera TTS via inemavox/Kokoro)? (recomendo os dois)
+2. **Narração**: a skill aceita áudio pronto E texto (gera TTS via ARCKHÉvox/Kokoro)? (recomendo os dois)
 3. **Música**: trilha além da narração já na v1? (recomendo v1 = narração; música na F3 com beat-sync)
 4. **Spec revisável**: o usuário sempre revisa a decupagem antes do render, ou tem modo "direto"?
    (recomendo padrão = mostrar resumo da decupagem e pedir ok; flag --direto pula)

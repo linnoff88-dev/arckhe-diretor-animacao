@@ -56,7 +56,7 @@ em virada de energia. Transição NUNCA uniforme o filme todo ("piscar sempre ig
 **Causa:** o offset da câmera só alimentava o parallax diferencial (×~0.1) — a MOLDURA nunca
 transladava. Um pan de "12%" movia 0.6% real.
 **Correção:** offset precisa TRANSLADAR o enquadramento (uv += offset) + parallax por cima;
-zoom com diferencial de profundidade (dolly real). E: amplitudes de cinema (zoom range ~1.3–1.5×,
+zoom com diferencial de profundidade (dolly real). E: amplitudes de cARCKHÉ (zoom range ~1.3–1.5×,
 travel 10–20%), não as tímidas (1.18×/12%); respiração de câmera contínua (drift+micro-zoom+roll)
 para nunca haver frame 100% estático.
 **Atenção:** translação exige HEADROOM de zoom — `fit(t) = 1/(1-2(|t|+margem))` — senão amostra

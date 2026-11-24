@@ -13,7 +13,7 @@ output:
   filename: exp1-fotos.mp4
 
 defaults:
-  look: cinema-dramatico
+  look: cARCKHÉ-dramatico
   transition_out:
     type: cut
     duration: 0

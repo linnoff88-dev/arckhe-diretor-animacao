@@ -12,7 +12,7 @@ output:
   filename: piloto-f1c.mp4
 
 defaults:
-  look: cinema-dramatico
+  look: cARCKHÉ-dramatico
   transition_out:
     type: cut
     duration: 0

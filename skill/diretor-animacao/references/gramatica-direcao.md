@@ -54,7 +54,7 @@ com 1 vale contemplativo → cresce ao clímax (burst/whip) → fecha suspenso (
 ## 6. Look / luz por emoção
 | Emoção do beat | Look |
 |---|---|
-| drama / peso / abertura | `cinema-dramatico` |
+| drama / peso / abertura | `cARCKHÉ-dramatico` |
 | encanto / sonho / ternura | `sonho-etereo` |
 | dureza / perda | `noir-film` |
 | energia / ação | `acao-epico` |

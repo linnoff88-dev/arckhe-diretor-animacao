@@ -15,7 +15,7 @@ output:
   filename: f2-demo.mp4
 
 defaults:
-  look: cinema-dramatico
+  look: cARCKHÉ-dramatico
   transition_out: { type: cut, duration: 0 }
 
 assets:

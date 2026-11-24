@@ -8,7 +8,7 @@
 | Item | O quê |
 |---|---|
 | Imagens | 21 ilustrações aquarela 1280×720 (flux2-klein, estilo coeso) — `assets/img/s1..s21.png` |
-| Narração | 22 WAVs prontos (`assets/audio/s1..s22.wav`), 104.4s total; s22 = CTA "inema.club" |
+| Narração | 22 WAVs prontos (`assets/audio/s1..s22.wav`), 104.4s total; s22 = CTA "ARCKHÉ AI" |
 | Pedido | "filme impactante, com músicas e efeitos de som" |
 
 **Análise (passo VER):** todas as imagens são **desenho ⇒ `effects: {parallax: 0}`** (regra A/B).
@@ -16,7 +16,7 @@ Por serem 1280×720 (< 1920), zooms ficaram ≤1.6×.
 
 ## 2. Decupagem final (26 shots de 21 imagens)
 
-**Ato 1 — O deserto** (`cinema-dramatico` → `sonho-etereo` na aparição)
+**Ato 1 — O deserto** (`cARCKHÉ-dramatico` → `sonho-etereo` na aparição)
 
 | # | Img | Beat | Movimento | Transição → |
 |---|-----|------|-----------|-------------|
@@ -60,14 +60,14 @@ Por serem 1280×720 (< 1920), zooms ficaram ≤1.6×.
 Conferências da gramática: 1 só `dramatico` (abertura) · transições nunca uniformes
 (cut ~70%, whip ×2, dip ×5, crossfade ×1) · alternância de energia/eixo/distância · fim suspenso.
 
-## 3. Som (música + SFX) — fluxo inemavox
+## 3. Som (música + SFX) — fluxo ARCKHÉvox
 
-As ferramentas: `~/projetos/inemavox/musica_v1.py` e `sfx_v1.py` (Freesound).
+As ferramentas: `~/projetos/ARCKHÉvox/musica_v1.py` e `sfx_v1.py` (Freesound).
 **Pegadinha:** os scripts NÃO carregam o `.env` sozinhos — exportar antes:
 
 ```bash
-cd ~/projetos/inemavox && set -a && source .env && set +a
-python3 musica_v1.py --query "calm piano cinematic ambient" --min-duration 110 --list-only
+cd ~/projetos/ARCKHÉvox && set -a && source .env && set +a
+python3 musica_v1.py --query "calm piano cARCKHÉtic ambient" --min-duration 110 --list-only
 python3 musica_v1.py --query "..." --pick 0 --outdir <destino>   # baixa
 ```
 
@@ -98,8 +98,8 @@ whips em 29.1s e 72.1s → whoosh em 28.95/71.95; shimmer em 37.3/121.9.
 ```bash
 # 1. decupagem.json (26 cenas, fadeIn = duração da transição da fronteira ANTERIOR — vale p/ whip, crossfade E dip)
 node ~/.claude/skills/diretor-animacao/scripts/montar-trilha.mjs decupagem.json narracao.wav
-# 2. baixar música/SFX (inemavox, acima) + sintetizar shimmer + mixar trilha-master.wav
-# 3. spec YAML (defaults: look cinema-dramatico, parallax 0, cut) → validate → render
+# 2. baixar música/SFX (ARCKHÉvox, acima) + sintetizar shimmer + mixar trilha-master.wav
+# 3. spec YAML (defaults: look cARCKHÉ-dramatico, parallax 0, cut) → validate → render
 cd ~/projetos/pixflow/skill
 node cli/pixflow-motion.mjs validate ~/projetos/pequeno-principe/filme/pequeno-principe.movie.yaml
 node cli/pixflow-motion.mjs render   ~/projetos/pequeno-principe/filme/pequeno-principe.movie.yaml saida.mp4
@@ -118,7 +118,7 @@ ffmpeg -i saida.mp4 -c:v libx264 -crf 24 -preset slow -pix_fmt yuv420p -c:a aac 
 
 ## 6. Lições novas deste exemplo
 
-1. **inemavox `.env`**: sempre `set -a; source .env; set +a` antes dos scripts de música/SFX.
+1. **ARCKHÉvox `.env`**: sempre `set -a; source .env; set +a` antes dos scripts de música/SFX.
 2. **Licença primeiro**: rejeitar BY-NC já na listagem (`--list-only`) antes de se apegar ao som.
 3. **Espectrograma como ouvido**: `showspectrumpic` revela drones/ruído antes de baixar errado.
 4. **fadeIn na decupagem vale para TODAS as transições com overlap** (whip, crossfade e

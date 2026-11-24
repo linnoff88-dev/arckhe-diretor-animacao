@@ -11,7 +11,7 @@ tem uma dinâmica diferente**: 12 shots, 12 setups de câmera distintos (lente, 
 E três deles são **burst cuts**: cortes curtíssimos em sequência (glasses read → jab line → body drop).
 
 **Transposição pro nosso caso (50 imagens + narração):** hoje tratamos 1 imagem = 1 cena = 1 movimento.
-O salto de cinema é o diretor poder **decompor 1 imagem em 2–4 shots**: wide da imagem → corte seco →
+O salto de cARCKHÉ é o diretor poder **decompor 1 imagem em 2–4 shots**: wide da imagem → corte seco →
 close numa região específica → corte → outra região. O motor JÁ aceita a mesma imagem em várias cenas;
 falta o **enquadramento por região** (ver feature 1).
 
