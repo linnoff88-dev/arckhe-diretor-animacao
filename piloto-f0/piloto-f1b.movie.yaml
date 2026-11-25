@@ -1,5 +1,5 @@
-# F1 — mesmo piloto, motor v2 (translação real + rotação + respiração + vocabulário novo).
-# A/B honesto: mesmas imagens, narração e durações do F0. Só a direção/motor mudou.
+# F1 — mesmo piloto, motor v2 (translaçêo real + rotaçêo + respiraçêo + vocabulário novo).
+# A/B honesto: mesmas imagens, narraçêo e durações do F0. Só a direçêo/motor mudou.
 schema: pixflow.movie/v1
 
 meta:
@@ -52,7 +52,7 @@ scenes:
     look: sonho-etereo
     camera: { type: tracking, direction: right, intensity: 1.1, easing: ease_in_out }
 
-  # BEAT 5 — contemplação. CRANE (grua subindo ao céu, recuando, roll suave): ascende com o olhar.
+  # BEAT 5 — contemplaçêo. CRANE (grua subindo ao céu, recuando, roll suave): ascende com o olhar.
   - id: c5_estrelas
     image: estrelas
     duration: 6.805

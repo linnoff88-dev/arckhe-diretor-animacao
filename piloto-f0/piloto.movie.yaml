@@ -1,9 +1,9 @@
 # F0 piloto — "O Pequeno Príncipe: trailer" · 5 imagens MISTAS (1 foto-real + 4 ilustrações)
-# Decupagem manual (gramática mdd + Ken Burns): alternância de movimento, câmera em função do beat.
+# Decupagem manual (gramática mdd + Ken Burns): alternância de movimento, câmera em funçêo do beat.
 schema: pixflow.movie/v1
 
 meta:
-  title: "Piloto F0 — Diretor de Animação"
+  title: "Piloto F0 — Diretor de Animaçêo"
   author: "diretor-animacao"
 
 output:
@@ -22,13 +22,13 @@ assets:
     - id: deserto
       file: assets/img/c1-deserto-foto.png   # FOTO-REAL (depth: Depth-Anything direto)
     - id: planeta
-      file: assets/img/c2-planeta.png        # ilustração
+      file: assets/img/c2-planeta.png        # ilustraçêo
     - id: rosa
-      file: assets/img/c3-rosa.png           # ilustração
+      file: assets/img/c3-rosa.png           # ilustraçêo
     - id: raposa
-      file: assets/img/c4-raposa.png         # ilustração
+      file: assets/img/c4-raposa.png         # ilustraçêo
     - id: estrelas
-      file: assets/img/c5-estrelas.png       # ilustração
+      file: assets/img/c5-estrelas.png       # ilustraçêo
 
 scenes:
   # BEAT 1 — estabelecer (queda no deserto). Regra: abertura ampla → PULL OUT revela a escala.
@@ -44,20 +44,20 @@ scenes:
     look: sonho-etereo
     camera: { type: orbit, intensity: 1.0, easing: ease_in_out }
 
-  # BEAT 3 — importância (a rosa única). Detalhe de valor → PUSH IN lento cria tensão/foco.
+  # BEAT 3 — importância (a rosa única). Detalhe de valor → PUSH IN lento cria tensêo/foco.
   - id: c3_rosa
     image: rosa
     duration: 5.867
     camera: { type: push_in, intensity: 1.1, easing: ease_in_out }
 
-  # BEAT 4 — ternura (a raposa, os laços). Conexão entre dois sujeitos → PAN desdobra a relação.
+  # BEAT 4 — ternura (a raposa, os laços). Conexêo entre dois sujeitos → PAN desdobra a relaçêo.
   - id: c4_raposa
     image: raposa
     duration: 6.805
     look: sonho-etereo
     camera: { type: pan, direction: right, intensity: 1.0, easing: ease_in_out }
 
-  # BEAT 5 — contemplação (o essencial é invisível). Clímax reflexivo → PUSH IN muito lento ao céu.
+  # BEAT 5 — contemplaçêo (o essencial é invisível). Clímax reflexivo → PUSH IN muito lento ao céu.
   - id: c5_estrelas
     image: estrelas
     duration: 6.805

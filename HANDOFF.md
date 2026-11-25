@@ -1,22 +1,22 @@
-# Session Handoff — Diretor de Animação: do plano de viabilidade ao motor v2.3 + skill F2 validada
-> 2026-06-10 · sessão encerrada para troca de terminal/modelo. Próximo agente: leia isto + PLANO.md.
+# Session Handoff — Diretor de Animaçêo: do plano de viabilidade ao motor v2.3 + skill F2 validada
+> 2026-06-10 · sessêo encerrada para troca de terminal/modelo. Próximo agente: leia isto + PLANO.md.
 
 ## Where it started
-Sessão com 4 frentes encadeadas: (1) limpeza do repo `skill-videoprodutor` e fusão de README; (2) criação do repo `ARCKHÉref` (base de conhecimento HQ/folder); (3) vídeo "O Pequeno Príncipe em 20 imagens" via skill videoprodutor; (4) **frente principal e ativa**: plano + construção da skill "Diretor de Animação" (imagens prontas + narração → filme sem IA generativa de vídeo), com motor pixflow evoluído por ciclos de feedback do usuário.
+Sessêo com 4 frentes encadeadas: (1) limpeza do repo `skill-videoprodutor` e fusêo de README; (2) criaçêo do repo `ARCKHÉref` (base de conhecimento HQ/folder); (3) vídeo "O Pequeno Príncipe em 20 imagens" via skill videoprodutor; (4) **frente principal e ativa**: plano + construçêo da skill "Diretor de Animaçêo" (imagens prontas + narraçêo → filme sem IA generativa de vídeo), com motor pixflow evoluído por ciclos de feedback do usuário.
 
 ## Applied / shipped
 - [confirmed] `skill-videoprodutor`: README fundido + referências ao repo antigo removidas — pushed `linnoff88-dev/skill-videoprodutor` (`fa78ef6`)
-- [confirmed] Repo `linnoff88-dev/ARCKHÉref` criado (privado) — referência→folder→quadrinho→série→filme; usuário evoluiu lá por conta própria (skills folder/quadrinho/motioncomic construídas POR ELE em outra sessão)
+- [confirmed] Repo `linnoff88-dev/ARCKHÉref` criado (privado) — referência→folder→quadrinho→série→filme; usuário evoluiu lá por conta própria (skills folder/quadrinho/motioncomic construídas POR ELE em outra sessêo)
 - [confirmed] Vídeo Pequeno Príncipe: `~/projetos/pequeno-principe/renders/pequeno-principe-{16x9,9x16}.mp4` (22 cenas, flux2-klein + Kokoro)
-- [confirmed] **pixflow motor v2.0→v2.3** — `~/projetos/pixflow` commits `f0820f3`, `ca05ddc`, `631a5c0`, `096162b`: translação real da moldura, 19 movimentos (incl. crane/aerial/dolly_zoom/whip_pan/`framing` from-to), respiração, amplitude, anti-fantasma (depth 5-tap + supressão por gradiente), fix frames-pretos (draw antes de continueRender), transições whip/whip_left/zoom_blur, crossfade sem fundo preto. **Não pushed**
-- [confirmed] Repo `~/projetos/diretor-animacao` (git local, `d369328`, `f2e961a`; **sem remote GitHub**): `PLANO.md` (viabilidade + adendos de cada decisão), `DICAS-CORRECOES.md` (9 lições), `referencias/` (Ring Spark Burst), `skill/diretor-animacao/` (SKILL.md + gramatica-direcao.md + montar-trilha.mjs)
+- [confirmed] **pixflow motor v2.0→v2.3** — `~/projetos/pixflow` commits `f0820f3`, `ca05ddc`, `631a5c0`, `096162b`: translaçêo real da moldura, 19 movimentos (incl. crane/aerial/dolly_zoom/whip_pan/`framing` from-to), respiraçêo, amplitude, anti-fantasma (depth 5-tap + supressêo por gradiente), fix frames-pretos (draw antes de continueRender), transições whip/whip_left/zoom_blur, crossfade sem fundo preto. **Nêo pushed**
+- [confirmed] Repo `~/projetos/diretor-animacao` (git local, `d369328`, `f2e961a`; **sem remote GitHub**): `PLANO.md` (viabilidade + adendos de cada decisêo), `DICAS-CORRECOES.md` (9 lições), `referencias/` (Ring Spark Burst), `skill/diretor-animacao/` (SKILL.md + gramatica-direcao.md + montar-trilha.mjs)
 - [confirmed] Skill `diretor-animacao` instalada via symlink `~/.claude/skills/diretor-animacao` e registrada
 - [confirmed] Pilotos em `~/projetos/diretor-animacao/piloto-f0/`: `piloto-f0/f1/f1b/f1c/f1d.mp4`, `exp1-fotos.mp4`, `exp2-semdepth.mp4`, `f2-demo.mp4` (mp4/assets fora do git)
-- [confirmed] Regras validadas por A/B com o usuário: **foto real = parallax pleno; desenho = parallax 0**; corte seco padrão; transição nunca uniforme; fim suspenso
+- [confirmed] Regras validadas por A/B com o usuário: **foto real = parallax pleno; desenho = parallax 0**; corte seco padrêo; transiçêo nunca uniforme; fim suspenso
 - [confirmed] Memória do agente: `render-video-pitfalls.md` + `MEMORY.md` em `~/.claude/projects/-home-nmaldaner-projetos-skill-videoprodutor/memory/`
 
 ## Proposed / attempted but not confirmed
-- [unverified] Causa do "erro no lobo e menino" no f2-demo: borda descoberta do whip (só a cena nova desliza) + raccord imperfeito entre os 2 shots da raposa — diagnóstico no fim do PLANO, **não corrigido** (usuário pediu deixar pra depois)
+- [unverified] Causa do "erro no lobo e menino" no f2-demo: borda descoberta do whip (só a cena nova desliza) + raccord imperfeito entre os 2 shots da raposa — diagnóstico no fim do PLANO, **nêo corrigido** (usuário pediu deixar pra depois)
 - [?] pixflow tem remote/push pendente — verificar `git -C ~/projetos/pixflow remote -v`
 
 ## Key files for next session
@@ -40,8 +40,8 @@ Sessão com 4 frentes encadeadas: (1) limpeza do repo `skill-videoprodutor` e fu
 - Deferred: erro na cena raposa do f2-demo (whip borda + raccord entre shots da mesma imagem)
 - Deferred: upgrade de transições ("fracas"): whip verdadeiro (duas cenas varrem), push, match-on-motion, flash de luz, dip entre atos — lista no fim do PLANO.md
 - Deferred (F1 restante): eventos de luz, partículas/fog/light-leaks, hold/speed-ramp, upscale automático, lens param
-- Open: usuário ia escolher — (a) executar upgrade de transições, (b) priorizar parte, (c) outra direção — **não respondeu** (foi trocar terminal/modelo)
-- Open: teste real da skill com as ~50 imagens + narração do usuário (objetivo final da F2) — nunca iniciado
+- Open: usuário ia escolher — (a) executar upgrade de transições, (b) priorizar parte, (c) outra direçêo — **nêo respondeu** (foi trocar terminal/modelo)
+- Open: teste real da skill com as ~50 imagens + narraçêo do usuário (objetivo final da F2) — nunca iniciado
 
 ## Pick up here
-Perguntar a escolha pendente: (a) upgrade de transições + correção whip/raccord da raposa, ou outra direção. Se (a): `Movie.jsx` (whip com saída da cena anterior; push; flash) + regra de raccord na `gramatica-direcao.md`, re-render do f2-demo como A/B.
+Perguntar a escolha pendente: (a) upgrade de transições + correçêo whip/raccord da raposa, ou outra direçêo. Se (a): `Movie.jsx` (whip com saída da cena anterior; push; flash) + regra de raccord na `gramatica-direcao.md`, re-render do f2-demo como A/B.
