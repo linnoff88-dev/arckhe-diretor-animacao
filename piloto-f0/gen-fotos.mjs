@@ -1,7 +1,7 @@
 // EXP1: 5 fotos ultra-realistas em alta resolução (mesmos 5 beats do piloto).
 import { generateImage } from '/home/nmaldaner/projetos/pixflow/skill/cli/genimg.mjs';
 
-const STYLE = 'ultra realistic photograph, cinematic film still, shot on ARRI Alexa 35mm, ' +
+const STYLE = 'ultra realistic photograph, cARCKHÉtic film still, shot on ARRI Alexa 35mm, ' +
   'natural light, rich detail, shallow depth of field, film grain, photorealism. ' +
   'NO text, no words, no letters, no watermark';
 
